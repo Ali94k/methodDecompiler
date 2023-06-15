@@ -77,8 +77,8 @@ public class Main {
         for(var i = 0; i < mNode.instructions.size(); i++) {
             var instruction = mNode.instructions.get(i);
 
-            // print out the opcode and the corresponding name
-            System.out.println(instruction.getOpcode() + " " + opcodeDictionary.get(instruction.getOpcode()));
+            // print out the opcode and the corresponding name, format so that names are aligned
+            System.out.printf("%-5s %s\n", instruction.getOpcode(), opcodeDictionary.get(instruction.getOpcode()));
         }
     }
 }
